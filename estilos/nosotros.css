@@ -1,0 +1,200 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro Display", sans-serif;
+  background-color: #b8afaf;
+  color: #333;
+}
+
+/* ----- HEADER ----- */
+header {
+  background-color: #312f2f;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* ----- NAV ----- */
+nav {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+
+.nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ----- INPUT DE BÚSQUEDA ----- */
+.input {
+  max-width: 190px;
+  background-color: #f5f5f5;
+  color: #242424;
+  padding: 0.15rem 0.5rem;
+  min-height: 40px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  line-height: 1.15;
+  box-shadow: 0px 10px 20px -18px;
+}
+
+input:focus {
+  border-bottom: 2px solid #5b5fc7;
+  border-radius: 4px 4px 2px 2px;
+}
+
+input:hover {
+  outline: 1px solid lightgrey;
+}
+
+/* ----- CONTENIDO PRINCIPAL ----- */
+main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.empleados {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(50% - 2rem); /* Ocupa 50% del ancho - espacio */
+  min-width: 300px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.8s ease;
+}
+
+.empleados:hover {
+  transform: translateY(-5px);
+}
+.empleados img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1000px;
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.5px;
+}
+
+.card:hover {
+  background-color: rgb(43, 43, 43);
+  transition-duration: 0.5s;
+}
+
+/* ----- RESPONSIVE desde 300px (hasta 600px) ----- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-center {
+    position: static;
+    transform: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p,
+  li {
+    font-size: 0.95rem;
+  }
+
+  .input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .empleados {
+    flex: 1 1 100%;
+  }
+}
+footer {
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
