@@ -10,7 +10,7 @@ body {
   width: 100%;
 }
 
-/* --- HEADER Y NAVEGACION --- */
+/*HEADER Y NAVEGACION */
 header {
   background-color: #312f2f;
   color: white;
@@ -76,7 +76,7 @@ nav a:hover {
 }
 
 /* --- INPUT DE BUSQUEDA --- */
-search {
+input[type="search"] {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -108,7 +108,7 @@ search {
   outline: 1px solid lightgrey;
 }
 
-/* --- CONTENIDO GENERAL --- */
+/*CONTENIDO GENERAL*/
 main {
   width: 100%;
   margin: 1rem auto;
@@ -134,7 +134,7 @@ h2 {
   margin: 0.8rem 0;
 }
 
-/* --- PRODUCTOS --- */
+/*PRODUCTOS*/
 .productos {
   display: grid;
   grid-template-columns: repeat(
@@ -205,7 +205,7 @@ h2 {
   background-color: #005bb5;
 }
 
-/* --- FOOTER --- */
+/*FOOTER*/
 footer {
   background-color: #242424;
   color: white;
@@ -222,7 +222,7 @@ footer p {
   padding: 0 0.5rem;
 }
 
-/* --- RESPONSIVE BREAKPOINTS --- */
+/*RESPONSIVE BREAKPOINTS*/
 
 /* Pantallas muy pequeñas (300px - 400px) */
 @media (max-width: 400px) {
@@ -243,7 +243,7 @@ footer p {
     padding: 0.1rem 0.3rem;
   }
 
-  search {
+  input[type="search"] {
     padding: 0 0.3rem;
   }
 
@@ -289,7 +289,7 @@ footer p {
     width: auto;
   }
 
-  search {
+  input[type="search"] {
     width: auto;
   }
 
@@ -328,7 +328,7 @@ footer p {
     width: auto;
   }
 
-  search {
+  input [type="search"] {
     width: auto;
   }
 

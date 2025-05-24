@@ -10,7 +10,7 @@ body {
   width: 100%;
 }
 
-/* ----- HEADER ----- */
+/*HEADER*/
 header {
   background-color: #312f2f;
   color: white;
@@ -74,8 +74,8 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ----- BÚSQUEDA ----- */
-.search {
+/*BÚSQUEDA*/
+input[type="search"] {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -106,7 +106,7 @@ nav a:hover {
   outline: 1px solid lightgrey;
 }
 
-/* ----- CONTENIDO PRINCIPAL ----- */
+/*CONTENIDO PRINCIPAL*/
 main {
   width: 100%;
   max-width: 1000px;
@@ -127,7 +127,7 @@ h2 {
   margin: 1rem 0;
 }
 
-/* ----- FORMULARIO ----- */
+/*FORMULARIO*/
 .formulario-container {
   width: 100%;
   max-width: 600px;
@@ -244,7 +244,7 @@ select {
   transform: translateY(0);
 }
 
-/* ----- FOOTER ----- */
+/*FOOTER*/
 footer {
   background-color: #242424;
   color: white;
@@ -261,7 +261,7 @@ footer p {
   padding: 0 1rem;
 }
 
-/* ----- RESPONSIVE BREAKPOINTS ----- */
+/*RESPONSIVE BREAKPOINTS*/
 
 /* Pantallas muy pequeñas (300px - 400px) */
 @media (max-width: 400px) {
@@ -282,7 +282,7 @@ footer p {
     padding: 0.2rem 0.3rem;
   }
 
-  .search {
+  input [type="search"] {
     padding: 0 0.5rem;
   }
 
@@ -401,7 +401,7 @@ footer p {
     transform: translateX(-50%);
   }
 
-  .search {
+  input [type="search"] {
     width: auto;
   }
 

@@ -10,7 +10,7 @@ body {
   width: 100%;
 }
 
-/* ----- HEADER ----- */
+/*HEADER*/
 header {
   background-color: #312f2f;
   color: white;
@@ -74,8 +74,8 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ----- BÚSQUEDA ----- */
-search {
+/*BÚSQUEDA*/
+input[type="search"] {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -106,7 +106,7 @@ search {
   outline: 1px solid lightgrey;
 }
 
-/* ----- CONTENIDO PRINCIPAL ----- */
+/*CONTENIDO PRINCIPAL*/
 main {
   width: 100%;
   max-width: 1200px;
@@ -119,7 +119,7 @@ section {
   margin-bottom: 2rem;
 }
 
-/* ----- QUIENES SOMOS ----- */
+/*QUIENES SOMOS*/
 .quienes-somos {
   text-align: center;
   padding: 1rem;
@@ -141,8 +141,8 @@ section {
   padding: 0 0.5rem;
 }
 
-/* ----- EMPLEADOS ----- */
-.flex-container {
+/*EMPLEADOS*/
+.container {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
@@ -194,7 +194,7 @@ section {
   text-align: center;
 }
 
-/* ----- FOOTER ----- */
+/* FOOTER*/
 footer {
   background-color: #242424;
   color: white;
@@ -210,8 +210,6 @@ footer p {
   line-height: 1.4;
   padding: 0 1rem;
 }
-
-/* ----- RESPONSIVE BREAKPOINTS ----- */
 
 /* Pantallas muy pequeñas (300px - 400px) */
 @media (max-width: 400px) {
@@ -232,7 +230,7 @@ footer p {
     padding: 0.2rem 0.3rem;
   }
 
-  search {
+  input [type="search"] {
     padding: 0 0.5rem;
   }
 
@@ -297,7 +295,7 @@ footer p {
     transform: translateX(-50%);
   }
 
-  search {
+  input [type="search"] {
     width: auto;
     position: relative;
   }
@@ -332,7 +330,7 @@ footer p {
     transform: translateX(-50%);
   }
 
-  search {
+  input[type="search"] {
     width: auto;
   }
 
